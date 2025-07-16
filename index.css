@@ -1,0 +1,136 @@
+* {
+  font-family: "Arial", "メイリオ", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #222;
+}
+
+main {
+  min-height: 90vh;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem;
+  width: 35%;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  main {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.2rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #2d3a4b;
+  text-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+h2 {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color: #3a506b;
+  font-weight: 600;
+}
+
+main img[alt="919takagi"] {
+  width: 7rem;
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+}
+
+main img[alt="notime"] {
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #222;
+}
+
+ul {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+li {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 320px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+
+table,
+th,
+td {
+  border: 1px solid #3a506b;
+}
+
+th,
+td {
+  padding: 10px 14px;
+}
+
+th {
+  font-weight: 600;
+  font-size: 1rem;
+  background: #3a506b;
+  color: #fff;
+}
+
+td {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}
+
+footer {
+  min-width: 320px;
+  text-align: center;
+  margin-top: 2rem;
+  color: #3a506b;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
