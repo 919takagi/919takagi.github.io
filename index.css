@@ -1,5 +1,5 @@
 * {
-  font-family: "Arial", "メイリオ", sans-serif;
+  font-family: "メイリオ", sans-serif;
   box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ h1 {
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
-  color: #2d3a4b;
+  color: black;
   text-shadow: 0 2px 8px rgba(44,62,80,0.08);
 }
 
@@ -67,6 +67,13 @@ main img[alt="919takagi"] {
 main img[alt="notime"] {
   margin-top: 1.2rem;
   box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+}
+
+img[alt="moe-counter"] {
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
