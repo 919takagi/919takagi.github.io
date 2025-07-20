@@ -76,6 +76,16 @@ img[alt="moe-counter"] {
   margin-right: auto;
 }
 
+span#commit-link {
+  /* 真ん中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #3a506b;
+}
+
 p {
   font-size: 1rem;
   margin: 0.3rem 0;

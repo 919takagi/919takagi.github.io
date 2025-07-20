@@ -12,6 +12,32 @@
       charset="utf-8"></script>
     <title>919takagi</title>
   </head>
+  <script>
+    const owner = '919takagi';
+    const repo = '919takagi.github.io';
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const fullSha = data[0].sha;
+        const shortSha = fullSha.substring(0, 7);
+        const commitUrl = `https://github.com/${owner}/${repo}/commit/${fullSha}`;
+
+        const a = document.createElement('a');
+        a.href = commitUrl;
+        a.textContent = shortSha;
+        a.target = '_blank';
+        a.rel = 'noopener';
+
+        const span = document.getElementById('commit-link');
+        span.appendChild(a);
+      })
+      .catch(error => {
+        document.getElementById('commit-link').textContent = '取得失敗';
+        console.error('Error fetching commit:', error);
+      });
+  </script>
   <body>
     <main>
       <section>
@@ -24,7 +50,6 @@
         <p>ゲームが好きです🎮️</p>
         <p>誕生日: 2001/09/19</p>
         <p>血液型: O型</p>
-
         <h2 style="font-size: 1rem;">好きなゲーム</h2>
         <ul>
           <li>RPG
@@ -193,5 +218,6 @@
       </footer>
     </main>
     <img src="https://count.getloli.com/@:919takagi?name=%3A919takagi&theme=original-old&padding=7&offset=0&align=top&scale=0.7&pixelated=0&darkmode=0" alt="moe-counter">
+    <span id="commit-link"></span>
   </body>
 </html>
