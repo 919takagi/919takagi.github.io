@@ -111,12 +111,14 @@ li {
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   min-width: 320px;
   background: rgba(255,255,255,0.95);
   border-radius: 0.7rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  border: 1px solid #3a506b; /* 外枠だけにボーダー */
 }
 
 table,
@@ -127,6 +129,7 @@ td {
 
 th,
 td {
+  border: none; /* セルごとのボーダーを削除 */
   padding: 10px 14px;
 }
 
